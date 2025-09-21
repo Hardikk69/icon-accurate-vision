@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const CallToActionSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-primary to-primary-hover">
+    <section className="py-20" style={{ background: 'var(--gradient-cta)' }}>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}

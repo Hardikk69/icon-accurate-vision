@@ -19,7 +19,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-secondary to-secondary/90 py-16">
+    <section className="py-16" style={{ background: 'var(--gradient-stats)' }}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (

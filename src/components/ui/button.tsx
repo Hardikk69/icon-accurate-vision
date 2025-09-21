@@ -17,6 +17,8 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         "outline-white": "border-2 border-white text-white hover:bg-white hover:text-secondary transition-all duration-300",
+        "brand-red": "bg-[hsl(var(--brand-red))] text-white hover:bg-[hsl(var(--brand-red))]/90 transition-all duration-300",
+        "brand-orange": "bg-[hsl(var(--brand-orange))] text-white hover:bg-[hsl(var(--brand-orange))]/90 transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

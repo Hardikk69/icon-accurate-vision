@@ -25,10 +25,10 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-lg px-8 py-6">
+              <Button variant="brand-red" size="lg" className="text-lg px-8 py-6">
                 Get Started
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Button variant="brand-orange" size="lg" className="text-lg px-8 py-6">
                 Explore Our Services
               </Button>
             </div>

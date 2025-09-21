@@ -17,18 +17,23 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 15% 15%;
 
-    /* AccRuvia Brand Colors */
-    --primary: 15 100% 60%; /* Vibrant Orange */
+    /* AccRuvia Brand Colors - Exact Figma Match */
+    --primary: 25 95% 53%; /* Brand Orange */
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 15 100% 55%;
+    --primary-hover: 25 95% 48%;
     
-    --secondary: 213 25% 20%; /* Navy Blue */
+    --secondary: 220 30% 18%; /* Navy Blue */
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 213 25% 25%;
+    --secondary-hover: 220 30% 25%;
 
-    --accent: 188 85% 40%; /* Turquoise */
+    --accent: 172 100% 50%; /* Teal */
     --accent-foreground: 0 0% 100%;
-    --accent-hover: 188 85% 35%;
+    --accent-hover: 172 100% 45%;
+    
+    /* Additional Brand Colors */
+    --brand-red: 14 100% 57%; /* Red for Get Started button */
+    --brand-orange: 25 95% 53%; /* Orange for secondary buttons */
+    --brand-teal: 172 100% 50%; /* Teal accent */
 
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
@@ -42,13 +47,14 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Custom Design Tokens */
-    --header-bg: 213 25% 20%;
+    /* Custom Design Tokens - Figma Match */
+    --header-bg: 220 30% 18%;
     --hero-bg: 210 25% 98%;
-    --stats-bg: 25 15% 25%;
-    --service-card-hover: 15 100% 97%;
-    --gradient-primary: linear-gradient(135deg, hsl(15 100% 60%), hsl(15 100% 50%));
-    --gradient-secondary: linear-gradient(135deg, hsl(213 25% 20%), hsl(213 25% 30%));
+    --stats-bg: linear-gradient(135deg, hsl(25 95% 20%), hsl(14 100% 25%)); /* Dark gradient like Figma */
+    --service-card-hover: 25 95% 97%;
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 95% 48%));
+    --gradient-cta: linear-gradient(135deg, hsl(14 100% 57%), hsl(25 95% 53%)); /* CTA section gradient */
+    --gradient-stats: linear-gradient(135deg, hsl(25 50% 15%), hsl(14 60% 20%)); /* Stats dark gradient */
     --shadow-card: 0 4px 20px -2px hsl(210 15% 15% / 0.1);
     --shadow-hover: 0 8px 30px -2px hsl(210 15% 15% / 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
