@@ -1,44 +1,33 @@
 import { Button } from "@/components/ui/button";
+import laptopImage from "@/assets/laptop.png"; // replace with your laptop image path
 
 const CallToActionSection = () => {
   return (
-    <section className="py-20" style={{ background: 'var(--gradient-cta)' }}>
+    <section className="py-20 relative">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div className="space-y-8">
-            <div className="text-white">
-              <p className="text-xl mb-4 opacity-90">We are here to support you in every step.</p>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-                Let's schedule a quick call.
-              </h2>
-            </div>
-            <Button 
-              variant="outline-white" 
-              size="lg" 
-              className="text-lg px-8 py-6"
+        <div className="relative bg-gradient-to-r from-[#3b1d16] to-[#ed2f0d] rounded-2xl p-10 lg:pl-40 overflow-visible">
+
+          {/* Laptop Image (sticks out) */}
+          <img
+            src={laptopImage}
+            alt="Laptop"
+            className="hidden lg:block absolute -left-10 top-1/7 -translate-y-1/2 w-[650px] drop-shadow-2xl"
+          />
+
+          {/* Text + Button */}
+          <div className="text-white space-y-6 lg:pl-[32rem]">
+            <p className="text-lg opacity-90">We are here to support you in every step.</p>
+            <h2 className="text-4xl lg:text-5xl font-bold leading-snug">
+              Let’s schedule a quick call.
+            </h2>
+            <Button
+              size="lg"
+              className="bg-white text-[#9e2f0d] font-semibold px-8 py-6 rounded-lg hover:bg-gray-100"
             >
-              Contact Us Today
+              Contact Us Today!
             </Button>
           </div>
 
-          {/* Laptop Image */}
-          <div className="relative">
-            <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <div className="w-full h-64 bg-white/20 rounded-xl flex items-center justify-center">
-                <div className="text-white/60 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
-                    <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <p className="text-sm">Schedule Your Consultation</p>
-                </div>
-              </div>
-            </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-white/10 rounded-full blur-xl"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
-          </div>
         </div>
       </div>
     </section>

@@ -27,7 +27,7 @@ const TeamSection = () => {
     <section id="team" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-muted-foreground text-lg mb-4">Our Team</p>
+          <p className="text-lg mb-4">Our Team</p>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Our <span className="text-primary">Management Team</span>
           </h2>
@@ -35,7 +35,7 @@ const TeamSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md overflow-hidden">
+            <Card key={index}   className="group hover:shadow-xl transition-all duration-300 shadow-md overflow-hidden border-[4px] border-red-500">
               <div className="relative">
                 <img
                   src={member.image}

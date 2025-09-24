@@ -22,7 +22,7 @@ const ServicesSection = () => {
       icon: FileText,
       title: "Tax Services",
       description: "Stay focused on growth while we handle your tax preparation and filing needs professionally.",
-      color: "bg-accent",
+      color: "bg-[#56b1b3]",
       learnMore: true,
     },
     {
@@ -43,7 +43,7 @@ const ServicesSection = () => {
       icon: UserCheck,
       title: "Outsourcing Services",
       description: "Stay focused on growth while we handle your outsourcing and business process needs professionally.",
-      color: "bg-accent",
+      color: "bg-[#56b1b3]",
       learnMore: true,
     },
   ];
@@ -62,22 +62,22 @@ const ServicesSection = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md">
+              <Card key={index} className="group transition-all duration-300 border-0 shadow-md hover:bg-[#9e2f0d] hover:shadow-xl">
                 <CardHeader className="pb-4">
-                  <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className="w-8 h-8 text-white" />
+                  <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center mb-4 group-hover:bg-white group-hover:scale-110 transition-all duration-300`}>
+                    <Icon className="w-8 h-8 text-white group-hover:text-[#9e2f0d]" />
                   </div>
-                  <CardTitle className="text-xl font-bold text-secondary">
+                  <CardTitle className="text-xl font-bold text-secondary group-hover:text-white lg:text-2xl">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <CardDescription className="text-muted-foreground leading-relaxed">
+                  <CardDescription className="text-muted-foreground leading-relaxed group-hover:text-white lg:text-2xl">
                     {service.description}
                   </CardDescription>
                   {service.learnMore && (
-                    <Button variant="link" className="p-0 h-auto text-primary font-semibold">
-                      Learn More →
+                    <Button variant="link"className="w-full py-3 bg-[#56b1b3] text-white font-semibold lg:text-xl border border-transparent group-hover:border-white group-hover:bg-white/40 text-start transition-colors duration-300">
+                      Learn More {">>>"}
                     </Button>
                   )}
                 </CardContent>

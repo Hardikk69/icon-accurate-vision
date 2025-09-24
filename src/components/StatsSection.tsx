@@ -19,7 +19,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="py-16" style={{ background: 'var(--gradient-stats)' }}>
+    <section className="py-16 rounded-[50px] overflow-hidden" style={{ background:"linear-gradient(to right, #000000ff 0%, #af350f 50%, #000000ff 100%)",}}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (

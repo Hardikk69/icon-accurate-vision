@@ -6,21 +6,18 @@ const HeroSection = () => {
     <section className="bg-gradient-to-br from-slate-50 to-blue-50 py-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <p className="text-muted-foreground text-lg">Welcome to AccRuvia</p>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Your Trusted Partner for all your{" "}
-                <span className="text-primary">Accounting &</span>
+              <p className="text-foreground lg:text-2xl">Welcome to AccRuvia</p>
+              <h1 className="text-1xl lg:text-5xl font-bold">
+                Your Trusted Partner for
+                <br />
+                all your <span className="text-primary leading-normal">Accounting &</span>
                 <br />
                 <span className="text-primary">Recruitment Solutions</span>
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
-                Our expert team and qualified staff ensure a fully comprehensive
-                accounting service covering all the disciplines of accountancy from
-                accounts maintenance to chartered accountant services. We handle
-                all your financial and recruitment needs with precision.
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Our vision is to set Itself as benchmark in Accounting and<br /> Outsourcing industry. We help our clients to achieve their business <br />objectives by providing innovative, Best in class Consulting services.
               </p>
             </div>
 
@@ -28,13 +25,12 @@ const HeroSection = () => {
               <Button variant="brand-red" size="lg" className="text-lg px-8 py-6">
                 Get Started
               </Button>
-              <Button variant="brand-orange" size="lg" className="text-lg px-8 py-6">
-                Explore Our Services
+              <Button size="lg" className="text-lg px-8 py-6 border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-colors duration-300">                
+              Explore Our Services
               </Button>
             </div>
           </div>
 
-          {/* Illustration */}
           <div className="relative">
             <img
               src={heroIllustration}
@@ -46,7 +42,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
