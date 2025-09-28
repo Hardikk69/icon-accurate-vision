@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 mb-5">
             <h3 className="text-lg text-secondary font-bold">Get in Touch</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
@@ -77,11 +77,11 @@ const Footer = () => {
       </div>
 
       {/* Red arc background */}
-      <div className="absolute bottom-0 left-0 w-full h-16 mt-5 pt-5 pb-5 bg-[#D14012] rounded-t-[100%] z-0">
-          <p className="text-white text-lg text-center">
-            © 2024 AccRuvia. All rights reserved. | Professional Accounting & Recruitment Solutions
-          </p>
-        </div>
+      <div className="absolute bottom-0 left-0 w-full h-20 sm:h-16 mt-6 pt-5 pb-5 bg-[#D14012] rounded-t-[50%] sm:rounded-t-[100%] z-2">
+        <p className="text-white text-sm sm:text-lg text-center px-4">
+          © 2024 AccRuvia. All rights reserved. | Professional Accounting & Recruitment Solutions
+        </p>
+      </div>
     </footer>
   );
 };
