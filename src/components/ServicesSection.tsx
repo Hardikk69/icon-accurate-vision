@@ -1,8 +1,11 @@
 import { Calculator, Users, FileText, Headphones, Search, UserCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const ServicesSection = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
       icon: Calculator,
@@ -76,7 +79,8 @@ const ServicesSection = () => {
                     {service.description}
                   </CardDescription>
                   {service.learnMore && (
-                    <Button variant="link"className="w-full py-3 bg-[#56b1b3] text-white font-semibold lg:text-xl border border-transparent group-hover:border-white group-hover:bg-white/40 text-start transition-colors duration-300">
+                    <Button variant="link"className="w-full py-3 bg-[#56b1b3] text-white font-semibold lg:text-xl border border-transparent group-hover:border-white group-hover:bg-white/40 text-start transition-colors duration-300"
+                     onClick={() => navigate("/services")}>
                       Learn More {">>>"}
                     </Button>
                   )}
